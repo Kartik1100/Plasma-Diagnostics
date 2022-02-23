@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+    <link rel="stylesheet" href="/stylesheets/res.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/logo.jpeg" type="image/x-icon">
+</head>
+
+<body>
+    <img src="/images/247.png" alt="logoimg" id="logo">
+    <div id="pd">
+        <p class="plasma">
+            PLASMA
+        </p>
+        <p id="dia">DIAGNOSTICS</p>
+    </div>
+    <%- include("success_alert.ejs") %>
+
+        <div id="otpbox">
+            <p id="md">Please enter your Phone number to continue</p>
+            <form action="/getresult" method="POST" class="otp-content">
+                <div>
+                    <input type="text" name="ph" placeholder="Phone" class="otpdata">
+                </div>
+                <input type="submit" value="Submit" id="otpbtn">
+            </form>
+        </div>
+</body>
+
+</html>

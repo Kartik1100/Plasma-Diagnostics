@@ -1,0 +1,899 @@
+body {
+    overflow-x: hidden;
+}
+
+#pd {
+    background-color: red;
+    display: inline-block;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.plasma {
+    color: white;
+    font-size: 3vw;
+    font-family: 'Cooper Black';
+    margin: 15px;
+}
+
+#dia {
+    margin: 15px;
+    text-align: right;
+    margin-top: -14px;
+    font-size: 1.5vw;
+    font-family: 'Cooper Black';
+}
+
+#logo {
+    float: right;
+    height: 6.5vw;
+    margin: -10px;
+}
+
+#headdiv {
+    display: flex;
+    float: right;
+    margin: 10px;
+    font-size: 1.2vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.head {
+    margin-top: -2px;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+}
+
+.headicon {
+    border-radius: 50%;
+    background-color: rgb(250, 178, 173);
+    padding: 10px;
+    margin: 4px;
+    margin-top: -10px;
+    width: 3vw;
+    height: 3vw;
+}
+
+h1 {
+    padding: 20px;
+    /* color: rgb(138, 138, 245); */
+    color: rgb(235, 121, 113);
+    text-align: center;
+    font-size: 3.5vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#homemain {
+    margin-top: -30px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+}
+
+.test1 {
+    position: relative;
+    width: 50%;
+}
+
+.img {
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+}
+
+.imgtxt {
+    margin-top: 10px;
+    font-size: 2vw;
+}
+
+#slider {
+    overflow: hidden;
+    background-size: 100%;
+    margin: -10px;
+    width: 102%;
+    height: 35vw;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 15s slider infinite;
+}
+
+#slider figure img {
+    width: 20%;
+    float: left;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    90% {
+        left: -300%;
+    }
+}
+
+.info {
+    text-align: center;
+    /* background-color: rgb(138, 138, 245); */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 50px;
+    /* display: inline-block; */
+    box-shadow: 5px 5px 20px rgb(235, 121, 113);
+}
+
+.info:hover {
+    background-color: rgb(235, 121, 113);
+    color: black;
+    transition: .7s ease-in-out;
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.97);
+}
+
+.contact {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 50px;
+    /* display: inline-block; */
+    text-align: center;
+    box-shadow: 5px 5px 20px rgb(235, 121, 113);
+}
+
+.contact:hover {
+    background-color: rgb(235, 121, 113);
+    color: black;
+    transition: .7s ease-in-out;
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.97);
+}
+
+h2 {
+    font-size: 3vw;
+}
+
+h4 {
+    font-size: 2vw;
+    margin-bottom: -10px;
+}
+
+.infotxt {
+    font-size: 1.5vw;
+}
+
+.infotxt2 {
+    font-size: 1.8vw;
+}
+
+.fade {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .4s ease-in-out;
+    background-color: rgb(235, 121, 113);
+}
+
+.txt {
+    color: white;
+    font-size: 2vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.test1:hover .fade {
+    cursor: pointer;
+    opacity: 1;
+    border-radius: 10px;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.test1 {
+    width: 30%;
+    /* height: 30vh; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 8vh;
+    text-align: center;
+    padding: 15px;
+    margin: 25px;
+    border-radius: 10px;
+    border: 1px black;
+    box-shadow: 5px 5px 20px rgb(235, 121, 113);
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 1.5vw;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+.dropbtn:hover {
+    padding: 5px 10px;
+    background-color: rgb(145, 9, 4);
+    border-radius: 30px;
+    /* border: 2px black solid; */
+    color: white;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+    color: white;
+}
+
+.dropdown-content {
+    font-size: 1.5vw;
+    border-radius: 20px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(235, 121, 113);
+    transition: .5s ease;
+    border-radius: 20px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav#navbar {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5vw;
+    transition: .5s;
+    padding: 1px;
+    background: rgb(235, 121, 113);
+    top: 0;
+    position: relative;
+    width: 102%;
+    margin: -10px;
+    z-index: 1;
+}
+
+ul.list {
+    display: flex;
+    list-style: none;
+}
+
+ul.list li {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 20px;
+}
+
+ul.list li>a {
+    text-decoration: none;
+    display: flex;
+    color: black;
+    transition: 0.2s ease;
+}
+
+body.fixed-nav nav#navbar {
+    background-color: rgb(235 121 113 / 90%);
+    position: fixed;
+    box-shadow: 0 1px 20px rgb(0 0 0 / 20%);
+    transition: 0.9s ease;
+}
+
+#navbar li a:hover {
+    padding: 5px;
+    background-color: rgb(145, 9, 4);
+    border-radius: 30px;
+    /* border: 2px black solid; */
+    color: white;
+    transition: 0.2s ease;
+}
+
+#footer {
+    height: 65vh;
+    margin: -10px;
+    background-color: #2d455f;
+}
+
+#foottitle {
+    font-family: "Cooper Black", sans-serif;
+    font-size: 4vh;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.footnav {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3vh;
+}
+
+.footnav li {
+    list-style: none;
+    padding: 5px;
+}
+
+.footnav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footnav li a:hover {
+    color: black;
+}
+
+.social {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3vh;
+}
+
+.social li {
+    list-style: none;
+    padding: 5px;
+    float: left;
+}
+
+.social li a {
+    text-decoration: none;
+    color: white;
+}
+
+.social li a:hover {
+    color: black;
+}
+
+.fa {
+    /* padding: 20px; */
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+
+/*Facebook*/
+
+.fa-facebook {
+    color: white;
+}
+
+
+/*Instagram*/
+
+.fa-instagram {
+    color: white;
+}
+
+
+/*Linkedin*/
+
+.fa-linkedin {
+    color: white;
+}
+
+#adlog {
+    text-decoration: none;
+    color: #2d455f;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3vh;
+    margin: 40px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+}
+
+#adlog:hover {
+    background-color: #2d455f;
+    color: white;
+    border: 2px black solid;
+}
+
+.modal1 {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 60%;
+    top: 10%;
+    width: 30%;
+    height: 60%;
+    overflow: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(0 0 0 / 90%);
+}
+
+.modal-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modaldata {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.7vw;
+}
+
+#modalbtn {
+    width: 50%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    border: 2px black solid;
+    color: white;
+    background-color: rgb(235, 121, 113);
+    border-radius: 10px;
+    font-size: 2vw;
+    margin: 20px;
+}
+
+#modalbtn:hover {
+    color: black;
+    cursor: pointer;
+    background-color: beige;
+}
+
+#mysidebar {
+    display: none;
+}
+
+.sidebar {
+    display: none;
+}
+
+#main {
+    display: none;
+}
+
+#homesemimain1 {
+    margin-top: -40px;
+    display: none;
+}
+
+#homesemimain2 {
+    display: none;
+}
+
+.whyus {
+    /* background-color: rgb(235, 121, 113); */
+    margin: 20px;
+    margin-bottom: 40px;
+    box-shadow: 5px 5px 20px rgb(235, 121, 113);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    font-size: 3vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#whychooseus {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3vw;
+}
+
+.icons {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.why {
+    width: 100%;
+    margin: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 420px) {
+    .plasma {
+        font-size: 6.5vw;
+        font-style: italic;
+    }
+    #dia {
+        font-size: 5vw;
+        font-style: italic;
+    }
+    #logo {
+        float: right;
+        height: 20vw;
+        margin-right: 40px;
+        margin-top: 1px;
+    }
+    #headdiv {
+        display: none;
+    }
+    .headicon {
+        display: none;
+    }
+    h1 {
+        padding: 20px;
+        text-align: center;
+        font-size: 5vw;
+        font-family: "Montserrat", sans-serif;
+    }
+    #homemain {
+        margin-top: -30px;
+        font-family: "Montserrat", sans-serif;
+        display: grid;
+    }
+    .test1 {
+        /* position: relative; */
+        width: 80%;
+    }
+    .img {
+        border-radius: 5px;
+        display: block;
+        width: 100%;
+    }
+    .imgtxt {
+        margin-top: 10px;
+        font-size: 5vw;
+    }
+    .txt {
+        font-size: 6vw;
+    }
+    #slider {
+        overflow: hidden;
+        background-size: 100%;
+        /* margin: -10px; */
+        width: 106%;
+        height: 50vw;
+    }
+    #slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        animation: 15s slider infinite;
+    }
+    #slider figure img {
+        width: 20%;
+        float: left;
+    }
+    #navbar {
+        display: none;
+    }
+    .sidebar {
+        list-style-type: none;
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        /* background-color: rgb(138, 138, 245); */
+        background-color: rgb(0 0 0 / 90%);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.2s;
+    }
+    .sidebar a:hover {
+        color: gray;
+    }
+    .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    .openbtn {
+        background-color: white;
+        font-size: 20px;
+        cursor: pointer;
+        position: absolute;
+        top: 2%;
+        right: 0;
+        color: black;
+        border: none;
+    }
+    .openbtn:hover {
+        transition: 0.2s ease;
+    }
+    #main {
+        display: block;
+        padding: 10px;
+    }
+    .dropdown {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        float: none;
+        padding: 10px;
+        margin-left: 20px;
+    }
+    .dropdown .dropbtn {
+        font-size: 25px;
+        border: none;
+        outline: none;
+        color: white;
+        background-color: inherit;
+        font-family: inherit;
+    }
+    .dropbtn:hover {
+        transition: 0.2s ease-in;
+        cursor: pointer;
+        color: gray;
+    }
+    .dropdown-content {
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display: none;
+        border-radius: 0;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    .dropdown-content a {
+        color: black;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    .dropdown-content a:hover {
+        background-color: rgb(138, 138, 245);
+        transition: .2s ease;
+        border-radius: 0;
+        color: #f9f9f9;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    #footer {
+        margin: -10px;
+        height: 65vh;
+    }
+    .modal1 {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        left: 20%;
+        top: 20%;
+        width: 50%;
+        height: 40%;
+        overflow: auto;
+        font-size: 4vw;
+    }
+    .close {
+        font-size: 20px;
+    }
+    .modaldata {
+        font-size: 2vw;
+    }
+    #modalbtn {
+        font-size: 4vw;
+        margin: 10px;
+    }
+    .info {
+        padding: 20px;
+        margin: 25px;
+        margin-bottom: 70px;
+    }
+    .contact {
+        padding: 20px;
+        margin: 25px;
+    }
+    h3 {
+        font-size: 5vw;
+    }
+    h4 {
+        font-size: 5vw;
+    }
+    .infotxt {
+        font-size: 4vw;
+    }
+    .whyus {
+        display: inline-block;
+        width: 80%;
+        text-align: center;
+        margin: 20px;
+    }
+    .why {
+        margin-left: -20px;
+        font-size: 5vw;
+    }
+    #whychooseus {
+        font-size: 5vw;
+    }
+    .infotxt2 {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 420px) {
+    .plasma {
+        font-size: 5vw;
+    }
+    #dia {
+        font-size: 2.5vw;
+    }
+    #logo {
+        float: right;
+        height: 6.5vw;
+        margin: -6px;
+    }
+    #headdiv {
+        font-size: 1.4vw;
+    }
+    h1 {
+        font-size: 6vw;
+    }
+    #homemain {
+        display: none;
+    }
+    #homesemimain1 {
+        display: flex;
+    }
+    #homesemimain2 {
+        display: flex;
+    }
+    .test1 {
+        position: relative;
+        width: 50%;
+    }
+    .img {
+        border-radius: 5px;
+        display: block;
+        width: 100%;
+    }
+    .imgtxt {
+        margin-top: 10px;
+        font-size: 3vw;
+    }
+    .txt {
+        font-size: 4vw;
+    }
+    nav#navbar {
+        font-size: 3vw;
+    }
+    .dropdown .dropbtn {
+        font-size: 3vw;
+    }
+    .dropdown-content {
+        font-size: 2.5vw;
+    }
+    .modal1 {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        left: 20%;
+        top: 20%;
+        width: 50%;
+        height: 55%;
+        overflow: auto;
+        font-size: 4vw;
+    }
+    .close {
+        font-size: 20px;
+    }
+    .modaldata {
+        font-size: 2vw;
+    }
+    #modalbtn {
+        font-size: 2.5vw;
+        margin: 10px;
+    }
+    .info {
+        padding: 15px;
+        margin: 20px;
+        margin-bottom: 70px;
+    }
+    .contact {
+        padding: 20px;
+        margin: 25px;
+    }
+    h3 {
+        font-size: 3.5vw;
+    }
+    h4 {
+        font-size: 4vw;
+    }
+    .infotxt {
+        font-size: 2.5vw;
+    }
+    .icons {
+        width: 70px;
+        height: 70px;
+    }
+    .why {
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 680px) and (min-width: 420px) {
+    .plasma {
+        font-size: 3vw;
+    }
+    #dia {
+        font-size: 2vw;
+    }
+    nav#navbar {
+        font-size: 3vw;
+    }
+    .dropdown .dropbtn {
+        font-size: 3vw;
+    }
+    .dropdown-content {
+        font-size: 2.5vw;
+    }
+}

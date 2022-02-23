@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/allorders.css">
+    <title>All orders</title>
+    <link rel="icon" href="/images/logo.jpeg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- <img src="247.png" alt="logoimg" id="logo">
+    <div id="headdiv">
+        <img src="https://www.iconpacks.net/icons/1/free-mail-icon-142-thumb.png" alt="mail" class="headicon">
+        <p class="head"><b>Email</b><br><a href="mailto:plasmadiagnostics.bihar@gmail.com" class="links">plasmadiagnostics.bihar@gmail.com</a> </p>
+        <img src="https://cdn.iconscout.com/icon/free/png-256/phone-2666572-2212584.png" alt="phone" class="headicon">
+        <p class="head"><b>Helpline</b> <br><a href="tel:+916209091000" class="links">6209091000, </a><a href="tel:+916209092000" class="links">6209092000, </a><a href="tel:+919386362196" class="links">9386362196</a></p>
+    </div> -->
+
+    <div id="pd">
+        <p class="plasma">
+            PLASMA
+        </p>
+        <p id="dia">DIAGNOSTICS</p>
+    </div>
+    <p id="adhead">Admin Panel</p>
+    <%- include("Navbar.ejs") %>
+
+
+        <table>
+            <tr>
+                <th>orderId</th>
+                <th>Name</th>
+                <th>Phone Number</th>
+                <th>Test</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Home Service</th>
+            </tr>
+            <% akshay.forEach( function (akshay){ %>
+                <tr>
+                    <th>
+                        <%=akshay.orderId%>
+                    </th>
+                    <th>
+                        <%=akshay.fname%>
+                            <%=akshay.lname%>
+                    </th>
+                    <th>
+                        <%=akshay.phone%>
+                    </th>
+                    <th>
+                        <%=akshay.testname%>
+                    </th>
+                    <th>
+                        <%=akshay.date%>
+                    </th>
+                    <th>
+                        <%=akshay.time%>
+                    </th>
+                </tr>
+
+                <% }) %>
+
+        </table>
+</body>
+
+</html>

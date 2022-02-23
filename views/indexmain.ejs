@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/index.css">
+    <title>Plasma Diagnostics - Book Tests Online</title>
+    <meta name="description" content="Your one stop location to book various tests online. Book different tests like Covid-19 RT-PCR, Blood Test, MRI Scan, CT Scan and much more at affordable prices">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" href="/images/logo.jpeg" type="image/x-icon">
+</head>
+
+<body>
+    <img src="/images/247.png" alt="logoimg" id="logo">
+    <div id="headdiv">
+        <img src="https://www.iconpacks.net/icons/1/free-mail-icon-142-thumb.png" alt="mail" class="headicon">
+        <p class="head"><b>Email</b><br><a href="mailto:plasmadiagnostics.bihar@gmail.com" class="links">plasmadiagnostics.bihar@gmail.com</a> </p>
+        <img src="https://cdn.iconscout.com/icon/free/png-256/phone-2666572-2212584.png" alt="phone" class="headicon">
+        <p class="head"><b>Helpline</b> <br><a href="tel:+916209091000" class="links">6209091000, </a><a href="tel:+916209092000" class="links">6209092000, </a><a href="tel:+919386362196" class="links">9386362196</a></p>
+    </div>
+
+    <div id="pd">
+        <p class="plasma">
+            PLASMA
+        </p>
+        <p id="dia">DIAGNOSTICS</p>
+    </div>
+
+    <!-- Side Bar Begin-->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <li><a href="/">Home</a></li>
+        <li><a href="aboutus">About us</a></li>
+        <li><a href="/res">Results</a></li>
+        <li><a href="contactus">Contact us</a></li>
+        <!-- <div class="dropdown">
+            <li class="dropbtn">Contact us</li>
+            <div class="dropdown-content">
+                <a href="#">6209092000</a>
+                <a href="#">9386362196</a>
+            </div>
+        </div> -->
+        <div class="dropdown">
+            <li class="dropbtn">Tests Available</li>
+            <div class="dropdown-content">
+                <a href="bloodtest">Blood Test</a>
+                <a href="mri">MRI</a>
+                <a href="ctscan">CT Scan</a>
+                <a href="covid">Covid-19 test</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰</button>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+    <script>
+        var modal = document.getElementById("modalbox");
+        var buttonsb = document.getElementById("triggermodal2");
+        var span = document.getElementsByClassName("close")[0];
+        buttonsb.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <!-- Side Bar End -->
+
+    <nav id="navbar">
+        <ul class="list">
+            <li><a href="/">Home</a></li>
+            <li><a href="aboutus">About us</a></li>
+            <!-- <div class="dropdown">
+                <li class="dropbtn">Contact us</li>
+                <div class="dropdown-content">
+                    <a href="#">6209092000</a>
+                    <a href="#">9386362196</a>
+                </div>
+            </div> -->
+            <li><a href="contactus">Contact us</a></li>
+            <div class="dropdown">
+                <li class="dropbtn">Tests Available</li>
+                <div class="dropdown-content">
+                    <a href="bloodtest">Blood Test</a>
+                    <a href="mri">MRI</a>
+                    <a href="ctscan">CT Scan</a>
+                    <a href="covid">Covid-19 test</a>
+                </div>
+            </div>
+            <li><a href="/res">Results</a></li>
+        </ul>
+    </nav>
+
+    <div id="slider">
+        <figure>
+            <img src="/images/slider.jpg" alt="sliderimage">
+            <img src="/images/slider2.jpg" alt="sliderimage">
+            <img src="/images/slider3.jpg" alt="sliderimage">
+            <img src="/images/slider4.jpg" alt="sliderimage">
+        </figure>
+    </div>
+
+    <h1 id="section3">Services we offer</h1>
+    <div id="homemain">
+        <div class="test1">
+            <a href="covid">
+                <img src="https://www.aamc.org/sites/default/files/styles/scale_and_crop_1200_x_666/public/woman-swab-test-1266490168.jpg?itok=TG88C4RQ" alt="image" class="img">
+                <div class="fade">
+                    <div class="txt">Covid-19 RT-PCR Test</div>
+                </div>
+            </a>
+            <div class="imgtxt">Covid Test</div>
+        </div>
+        <div class="test1">
+            <a href="bloodtest">
+                <img src="https://www.ghp-news.com/wp-content/uploads/2019/12/blood-tests.jpg" alt="image" class="img">
+                <div class="fade">
+                    <div class="txt">Blood Test</div>
+                </div>
+            </a>
+            <div class="imgtxt">Blood Test</div>
+        </div>
+        <div class="test1">
+            <a href="mri">
+                <img src="https://www.cancertodaymag.org/PublishingImages/issues/2019%20Spring/4-looking-for-brain-metastases-1500-WEB.jpg" alt="image" class="img">
+                <div class="fade">
+                    <div class="txt">MRI</div>
+                </div>
+            </a>
+            <div class="imgtxt">MRI</div>
+        </div>
+        <div class="test1">
+            <a href="ctscan">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNGA6aU1K-a2wR0RE9EkdSkuE2S9Jt1H3R2RPTB9825jPrbNtPtXN2W4_sjT9blqqe1Vs&usqp=CAU" alt="image" class="img">
+                <div class="fade">
+                    <div class="txt">CT Scan</div>
+                </div>
+            </a>
+            <div class="imgtxt">CT Scan</div>
+        </div>
+    </div>
+
+    <div id="homesemimain1">
+        <div class="test1">
+            <a href="Covidslots.html">
+                <img src="https://www.aamc.org/sites/default/files/styles/scale_and_crop_1200_x_666/public/woman-swab-test-1266490168.jpg?itok=TG88C4RQ" alt="image" class="img">
+                <div class="fade">
+                    <div class="txt">Covid-19 RT-PCR Test</div>
+                </div>
+            </a>
+            <div class="imgtxt">Covid Test</div>
+        </div>
+        <div class="test1">
+            <a href="bloodtest">
+                <img src="https://www.ghp-news.com/wp-content/uploads/2019/12/blood-tests.jpg" alt="image" class="img">
+                <div class="fade">
+                    <div class="txt">Blood Test</div>
+                </div>
+            </a>
+            <div class="imgtxt">Blood Test</div>
+        </div>
+    </div>
+
+    <div id="homesemimain2">
+        <div class="test1">
+            <a href="mri">
+                <img src="https://www.cancertodaymag.org/PublishingImages/issues/2019%20Spring/4-looking-for-brain-metastases-1500-WEB.jpg" alt="image" class="img">
+                <div class="fade">
+                    <div class="txt">MRI</div>
+                </div>
+            </a>
+            <div class="imgtxt">MRI</div>
+        </div>
+        <div class="test1">
+            <a href="ctscan">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNGA6aU1K-a2wR0RE9EkdSkuE2S9Jt1H3R2RPTB9825jPrbNtPtXN2W4_sjT9blqqe1Vs&usqp=CAU" alt="image" class="img">
+                <div class="fade">
+                    <div class="txt">CT Scan</div>
+                </div>
+            </a>
+            <div class="imgtxt">CT Scan</div>
+        </div>
+    </div>
+
+    <div class="contact" id="section1">
+        <h4>Contact Information</h4>
+        <p class="infotxt2">Email - plasmadiagnostics.bihar@gmail.com</p>
+        <p class="infotxt2">Helpline - 6209091000, 6209092000, 9386362196</p>
+    </div>
+    <!-- <div class="info">
+        <h2>About Us</h2>
+        <p class="infotxt">Plasma Diagnostics is a trusted Diagnostics centre based in Patna <br>In Plasma Diagnostics we believe in providing accurate and reliable services to the people.</p>
+        <p class="infotxt">We are an Authorised Collection Centre - Netaji Subhas Medical College and Hospital</p>
+        <h4>PATNA CENTRE</h4>
+        <P class="infotxt">Infront of Pillar no. 83, Raja Bazar, Bailey Road, Patna - 14</p>
+        <h4>OUR MISSION </h4>
+        <p class="infotxt">To build more reliable laboratories, imaging and make use of more and more technologically advanced equipments providing the most accurate readings to the people</p>
+        <h4>OUR VISION</h4>
+        <p class="infotxt">To be recognized as the best and most reliable diagnostic service provider in the country.</p>
+    </div>
+
+    <h2 id="whychooseus">What Makes us Different</h2>
+    <div class="whyus">
+        <div class="why">
+            <img src="https://static.thenounproject.com/png/290688-200.png" alt="lab" class="icons"><br> FULLY AUTOMATED LAB
+        </div>
+        <div class="why">
+            <img src="https://icon-library.com/images/accurate-icon/accurate-icon-16.jpg" alt="accuracy" class="icons"> <br> GUARANTEED ACCURACY
+        </div>
+        <div class="why">
+            <img src="https://img.icons8.com/ios/452/100.png" alt="results" class="icons"><br> 100% CALIBRATION AND RESULTS
+        </div>
+        <div class="why">
+            <img src="https://cdn3.iconfinder.com/data/icons/innovation-technology/68/33-512.png" alt="tech" class="icons"><br> LATEST TECHNOLOGY AND EQUIPMENTS
+        </div>
+    </div> -->
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.010931955645!2d85.09008611501773!3d25.604552983708345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed574000557ec5%3A0x213cc5d44e36b852!2sPlasma%20Diagnostics!5e0!3m2!1sen!2sin!4v1622614749474!5m2!1sen!2sin"
+        width="100%" height="400vw" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <div id="footer">
+        <header>
+            <nav class="footnav">
+                <ul>
+                    <li id="foottitle">PLASMA DIAGNOSTICS</li>
+                    <li><a href="#"><b>Quick links:</b></a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="aboutus">About us</a></li>
+                    <li><a href="contactus">Contact us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <header>
+            <nav class="social ">
+                <ul>
+                    <li><b>Connect with us: </b></li>
+                    <li>
+                        <a href="# " class="fa fa-facebook "></a>
+                    </li>
+                    <li>
+                        <a href="# " class="fa fa-instagram "></a>
+                    </li>
+                    <li>
+                        <a href="# " class="fa fa-linkedin "></a>
+                    </li>
+                    <!-- <li>
+                        <a href="/adminLogin" target="_blank">login admin</a>
+                    </li> -->
+                </ul>
+            </nav>
+        </header><br><br><br><br>
+        <div>
+            <a href="/adminLogin" target="_blank" id="adlog">Login as Admin</a>
+        </div>
+    </div>
+
+
+    <!-- Modal Box Begin -->
+    <!-- <div id="modalbox" class="modal1">
+        <span class="close">&times;</span>
+        <p>Please enter your Phone number to continue</p>
+        <form action="/getresult" class="modal-content">
+            <div>
+                <input type="text" name="ph" placeholder="Phone" class="modaldata">
+            </div>
+            <br>
+            <input type="submit" value="submit" id="modalbtn">
+            
+        </form>
+    </div> -->
+
+    <!-- <script>
+        var modal = document.getElementById("modalbox");
+        var button = document.getElementById("triggermodal");
+        var span = document.getElementsByClassName("close")[0];
+        button.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script> -->
+    <!-- Modal Box End -->
+
+    <script>
+        const nav = document.querySelector("#navbar");
+        const NavTop = nav.offsetTop;
+
+        function fixnavbar() {
+            if (window.scrollY >= NavTop) {
+                document.body.style.paddingTop = nav.offsetHeight + "px";
+                document.body.classList.add("fixed-nav");
+            } else {
+                document.body.style.paddingTop = 0;
+                document.body.classList.remove("fixed-nav");
+            }
+        }
+        window.addEventListener("scroll", fixnavbar);
+    </script>
+
+    <!-- <script>
+        $(document).ready(function() {
+            $("a ").on('click', function(event) {
+
+                if (this.hash !== " ") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script> -->
+</body>
+
+</html>

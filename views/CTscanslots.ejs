@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/slots.css">
+    <title>Plasma Diagnostics - Book a CT Scan Appointments</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" href="/images/logo.jpeg" type="image/x-icon">
+</head>
+
+<body>
+    <img src="/images/247.png" alt="logoimg" id="logo">
+    <div id="headdiv">
+        <img src="https://www.iconpacks.net/icons/1/free-mail-icon-142-thumb.png" alt="mail" class="headicon">
+        <p class="head"><b>Email</b><br><a href="mailto:plasmadiagnostics.bihar@gmail.com" class="links">plasmadiagnostics.bihar@gmail.com</a> </p>
+        <img src="https://cdn.iconscout.com/icon/free/png-256/phone-2666572-2212584.png" alt="phone" class="headicon">
+        <p class="head"><b>Helpline</b> <br><a href="tel:+916209091000" class="links">6209091000, </a><a href="tel:+916209092000" class="links">6209092000, </a><a href="tel:+919386362196" class="links">9386362196</a></p>
+    </div>
+
+    <div id="pd">
+        <p class="plasma">
+            PLASMA
+        </p>
+        <p id="dia">DIAGNOSTICS</p>
+    </div>
+
+    <!-- Side Bar Begin-->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <li><a href="/">Home</a></li>
+        <li><a href="aboutus">About us</a></li>
+        <li><a href="contactus">Contact us</a></li>
+        <div class="dropdown">
+            <li class="dropbtn">Tests Available</li>
+            <div class="dropdown-content">
+                <a href="bloodtest">Blood Test</a>
+                <a href="mri">MRI</a>
+                <a href="ctscan">CT Scan</a>
+                <a href="covid">Covid-19 test</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰</button>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+    <script>
+        var modal = document.getElementById("modalbox");
+        var buttonsb = document.getElementById("triggermodal2");
+        var span = document.getElementsByClassName("close")[0];
+        buttonsb.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <!-- Side Bar End -->
+
+    <nav id="navbar">
+        <ul class="list">
+            <li><a href="/">Home</a></li>
+            <li><a href="aboutus">About us</a></li>
+            <li><a href="contactus">Contact us</a></li>
+            <div class="dropdown">
+                <li class="dropbtn">Tests Available</li>
+                <div class="dropdown-content">
+                    <a href="bloodtest">Blood Test</a>
+                    <a href="mri">MRI</a>
+                    <a href="ctscan">CT Scan</a>
+                    <a href="covid">Covid-19 test</a>
+                </div>
+            </div>
+        </ul>
+    </nav>
+
+    <p id="slotinfo"><b>Please select a Time Slot to book a test</b></p>
+    <div id="timeslots">
+        <div class="timeslotstest">
+            <div>
+                <b>CT Scan</b><br>Time Slot <br> 10:00 AM - 12:00 PM
+            </div>
+            <a href="appointment.html">
+                <button id="timeslotsbtn">
+                    Book
+                </button>
+            </a>
+        </div>
+        <div class="timeslotstest">
+            <div>
+                <b>CT Scan</b><br>Time Slot <br> 12:00 PM - 2:00 PM
+            </div>
+            <a href="appointment.html">
+                <button id="timeslotsbtn">
+                    Book
+                </button>
+            </a>
+        </div>
+        <div class="timeslotstest">
+            <div>
+                <b>CT Scan</b><br>Time Slot <br> 4:00 PM - 6:00 PM
+            </div>
+            <a href="appointment.html">
+                <button id="timeslotsbtn">
+                    Book
+                </button>
+            </a>
+        </div>
+        <div class="timeslotstest">
+            <div>
+                <b>CT Scan</b><br>Time Slot <br> 6:00 PM - 8:00 PM
+            </div>
+            <a href="appointment.html">
+                <button id="timeslotsbtn">
+                    Book
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <h1>Other Services we offer</h1>
+    <div id="homemain">
+        <div class="test1">
+            <a href="covid">
+                <img src="https://www.aamc.org/sites/default/files/styles/scale_and_crop_1200_x_666/public/woman-swab-test-1266490168.jpg?itok=TG88C4RQ" alt="image" class="img">
+                <div class="fade">
+                    <div class="txt">Covid-19 RT-PCR Test</div>
+                </div>
+            </a>
+            <div class="imgtxt">Covid Test</div>
+        </div>
+        <div class="test1">
+            <a href="mri">
+                <img src="https://www.cancertodaymag.org/PublishingImages/issues/2019%20Spring/4-looking-for-brain-metastases-1500-WEB.jpg" alt="image" class="img">
+                <div class="fade">
+                    <div class="txt">MRI</div>
+                </div>
+            </a>
+            <div class="imgtxt">MRI</div>
+        </div>
+        <div class="test1">
+            <a href="bloodtest">
+                <img src="https://www.ghp-news.com/wp-content/uploads/2019/12/blood-tests.jpg" alt="image" class="img">
+                <div class="fade">
+                    <div class="txt">Blood Test</div>
+                </div>
+            </a>
+            <div class="imgtxt">Blood Test</div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <header>
+            <nav class="footnav">
+                <ul>
+                    <li id="foottitle">PLASMA DIAGNOSTICS</li>
+                    <li><a href="#"><b>Quick links:</b></a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="aboutus">About us</a></li>
+                    <li><a href="contactus">Contact us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <header>
+            <nav class="social ">
+                <ul>
+                    <li><b>Connect with us: </b></li>
+                    <li>
+                        <a href="# " class="fa fa-facebook "></a>
+                    </li>
+                    <li>
+                        <a href="# " class="fa fa-instagram "></a>
+                    </li>
+                    <li>
+                        <a href="# " class="fa fa-linkedin "></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <script>
+        const nav = document.querySelector("#navbar");
+        const NavTop = nav.offsetTop;
+
+        function fixnavbar() {
+            if (window.scrollY >= NavTop) {
+                document.body.style.paddingTop = nav.offsetHeight + "px";
+                document.body.classList.add("fixed-nav");
+            } else {
+                document.body.style.paddingTop = 0;
+                document.body.classList.remove("fixed-nav");
+            }
+        }
+        window.addEventListener("scroll", fixnavbar);
+    </script>
+</body>
+
+</html>

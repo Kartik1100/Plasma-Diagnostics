@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/admin.css">
+    <title>Admin Panel</title>
+    <link rel="icon" href="/images/logo.jpeg" type="image/x-icon">
+</head>
+
+<body>
+    <div id="pd">
+        <p class="plasma">
+            PLASMA
+        </p>
+        <p id="dia">DIAGNOSTICS</p>
+    </div>
+    <p id="adhead">Admin Panel</p>
+
+    <%- include("Navbar.ejs") %>
+
+        <!-- the sucees alert message starts from here  -->
+        <%if(karthik!=""){ %>
+            <p style="color: rebeccapurple; font-size: 2vw; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align: center; background-color: lightblue; border-radius: 10px; padding: 10px; margin-bottom: 40px; margin: 20px;">
+                <%=karthik%>
+            </p>
+            <% } %>
+
+
+
+
+                <!-- the sucees alert message ends from here -->
+
+                <div id="heading">
+                    Upload the result for the customer with no ID
+                </div>
+
+                <div class="admin">
+                    <form method="POST" action="/uploadresWithoutOrder" role="form" enctype="multipart/form-data"><br>
+                        <input type="number" name="mobile" placeholder="Enter mobile number" class="data" required><br>
+                        <input type="text" name="customerName" placeholder="Enter Customer name" class="data" required><br>
+                        <input type="text" name="test" placeholder="Test" class="data" required><br>
+                        <input type="file" name="file" placeholder="result upload" class="data" required id="file"><br>
+                        <input type="submit" value="Submit" class="data"><br>
+                    </form>
+                </div><br><br>
+                <script>
+                    $(document).ready(function() {
+                        $("form").submit(function() {
+                            alert("Booking Successful");
+                        });
+                    });
+                </script>
+
+                <!-- <a href="ordersection">all orders</a> -->
+
+</body>
+
+</html>

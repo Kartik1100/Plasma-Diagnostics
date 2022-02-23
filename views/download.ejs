@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plasma Diagnostics - Get Your Results</title>
+    <meta name="description" content="Your one stop location to book various tests online. Book different tests like Covid-19 RT-PCR, Blood Test, MRI Scan, CT Scan and much more at affordable prices">
+    <link rel="stylesheet" href="/stylesheets/download.css">
+    <link rel="icon" href="/images/logo.jpeg" type="image/x-icon">
+</head>
+
+<body>
+    <img src="/images/247.png" alt="logoimg" id="logo">
+    <div id="headdiv">
+        <img src="https://www.iconpacks.net/icons/1/free-mail-icon-142-thumb.png" alt="mail" class="headicon">
+        <p class="head"><b>Email</b><br><a href="mailto:plasmadiagnostics.bihar@gmail.com" class="links">plasmadiagnostics.bihar@gmail.com</a> </p>
+        <img src="https://cdn.iconscout.com/icon/free/png-256/phone-2666572-2212584.png" alt="phone" class="headicon">
+        <p class="head"><b>Helpline</b> <br><a href="tel:+916209091000" class="links">6209091000, </a><a href="tel:+916209092000" class="links">6209092000, </a><a href="tel:+919386362196" class="links">9386362196</a></p>
+    </div>
+    <div id="pd">
+        <p class="plasma">
+            PLASMA
+        </p>
+        <p id="dia">DIAGNOSTICS</p>
+    </div>
+
+    <div class="headdivphone">
+        <img src="https://www.iconpacks.net/icons/1/free-mail-icon-142-thumb.png" alt="mail" class="headicon">
+        <p class="head"><b>Email</b><br><a href="mailto:plasmadiagnostics.bihar@gmail.com" class="links">plasmadiagnostics.bihar@gmail.com</a> </p>
+    </div>
+    <div class="headdivphone">
+        <img src="https://cdn.iconscout.com/icon/free/png-256/phone-2666572-2212584.png" alt="phone" class="headicon">
+        <p class="head"><b>Helpline</b> <br><a href="tel:+916209091000" class="links">6209091000, </a><a href="tel:+916209092000" class="links">6209092000, </a><a href="tel:+919386362196" class="links">9386362196</a></p>
+    </div>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Test</th>
+            <th>Phone Number</th>
+            <th>Date</th>
+            <th>Download Your Result File</th>
+        </tr>
+        <% shashikant.forEach(function(shashikant){ %>
+
+
+
+            <tr>
+                <th>
+                    <%=shashikant.name%>
+                </th>
+                <th>
+                    <%=shashikant.testName%>
+                </th>
+                <th>
+                    <%=shashikant.mobile%>
+                </th>
+                <th>
+                    <%=shashikant.testResult%>
+                </th>
+                <!-- var t= <%=shashikant.testResult%> -->
+                <!-- <script>
+                    // var ak=<%=shashikant.testResult%>
+                    var getTest = t;//var test is now assigned to getTest which will only work on browsers
+                    console.log(getTest);  // successfully prints 101 on browser
+                 </script> -->
+
+
+                <!-- <script>
+                  var t=<%=shashikant.testResult%>
+              </script>
+                        -->
+
+
+
+                <!-- <th><a href="" target="_blank">Download</a></th>
+                <a href="">download</a> -->
+
+                <th><a href="downloadResult">Download Your Result File</a></th>
+            </tr>
+            <% }) %>
+
+
+
+
+
+
+
+
+    </table>
+</body>
+
+</html>

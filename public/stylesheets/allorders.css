@@ -1,0 +1,158 @@
+body {
+    overflow-x: hidden;
+}
+
+#pd {
+    background-color: red;
+    display: inline-block;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.plasma {
+    color: white;
+    font-size: 3vw;
+    font-family: 'Cooper Black';
+    margin: 15px;
+}
+
+#dia {
+    margin: 15px;
+    text-align: right;
+    margin-top: -14px;
+    font-size: 1.5vw;
+    font-family: 'Cooper Black';
+}
+
+#adhead {
+    margin: 15px;
+    font-style: italic;
+    /* padding: 10px; */
+    font-size: 2.5vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#logo {
+    float: right;
+    height: 6.5vw;
+    margin: -10px;
+}
+
+#headdiv {
+    display: flex;
+    float: right;
+    margin: 10px;
+    font-size: 1.2vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.head {
+    margin-top: -2px;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+}
+
+.headicon {
+    border-radius: 50%;
+    background-color: rgb(250, 178, 173);
+    padding: 10px;
+    margin: 4px;
+    margin-top: -10px;
+    width: 3vw;
+    height: 3vw;
+}
+
+#allordersdata {
+    background-color: rgb(250, 178, 173);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 40px;
+    font-size: 2vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+table {
+    margin: 50px;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+td,
+th {
+    font-size: 1.4vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(253, 191, 186);
+    font-size: 1vw;
+}
+
+@media screen and (max-width: 420px) {
+    .plasma {
+        font-size: 6.5vw;
+        font-style: italic;
+    }
+    #dia {
+        font-size: 5vw;
+        font-style: italic;
+    }
+    #logo {
+        float: right;
+        height: 20vw;
+        margin-right: 40px;
+        margin-top: 1px;
+    }
+    #headdiv {
+        display: none;
+    }
+    .headicon {
+        display: none;
+    }
+    #allordersdata {
+        font-size: 5vw;
+        margin: 10px;
+    }
+    table {
+        margin: 20px;
+    }
+    td,
+    th {
+        font-size: 3vw;
+    }
+    #adhead {
+        font-size: 7vw;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 420px) {
+    .plasma {
+        font-size: 5vw;
+    }
+    #dia {
+        font-size: 2.5vw;
+    }
+    #logo {
+        float: right;
+        height: 6.5vw;
+        margin: -6px;
+    }
+    #headdiv {
+        font-size: 1.4vw;
+    }
+    #allordersdata {
+        font-size: 3.5vw;
+    }
+    table {
+        margin: 30px;
+    }
+    #adhead {
+        font-size: 3vw;
+    }
+}
